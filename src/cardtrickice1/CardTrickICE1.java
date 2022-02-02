@@ -18,12 +18,20 @@ public class CardTrickICE1 {
      */
     public static void main(String[] args) 
     {
-        Card[] magicHand = new Card[7]; //Array of object
+        Card[] magicHand = new Card[7]; //Array of objects
         for( int i=0;i<magicHand.length;i++)
         {
-            Card c1 = new Card();
-            c1.setValue(2);//use a method to generate random *13
-            c1.setSuits("hearts");//random method suit 
+            
+            magicHand[i] = new Card();
+
+            magicHand[i].setValue(1);//use a method to generate random *13
+            magicHand[i].setSuits("");//random method suit 
+
+
+
+           System.out.println(magicHand[i].toString());
+
+
         }
         //step 2:take input 
         
